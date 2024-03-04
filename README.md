@@ -16,7 +16,7 @@
 Por ejemplo si se quiere instalar Pandas, hacerlo mediante el comando `pipenv install pandas`.
 
 ## Contenido
-.
+
 ├── `Pipfile`: Archivo que contiene los paquetes a instalar en el entorno virtual
 
 ├── `Pipfile.lock`

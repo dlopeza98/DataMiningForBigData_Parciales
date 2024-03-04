@@ -18,10 +18,17 @@ Por ejemplo si se quiere instalar Pandas, hacerlo mediante el comando `pipenv in
 ## Contenido
 .
 ├── `Pipfile`: Archivo que contiene los paquetes a instalar en el entorno virtual
+
 ├── `Pipfile.lock`
+
 └── `primerParcial` : folder para los archivos del caso práctico del primer parcial.
+
     ├── `TF-iDF.py` : Aplicación auto-contenida que ejecuta el MapReduce para el indice **TF-iDF** en un entorno productivo.
+    
     ├── `log_tf_idf.txt` : Logs de la ejecución de la aplicación auto-contenida.
+    
     ├── `parcial1_practico.ipynb` : Notebook en PySpark donde se explica el proceso para calcular el **TF-iDF**
+    
     ├── `pg100.txt` : ebook de texto que se usa como inpur para el ejercicio.
+    
     └── `results_tfidf.txt` : Resultados de la ejecución de la aplicación auto-contenida.

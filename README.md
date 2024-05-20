@@ -19,6 +19,11 @@ pdm install
 
 Por ejemplo si se quiere instalar Pandas, hacerlo mediante el comando `pdm add pandas`.
 
+## Nota sobre dependencias:
+
+Se usó el comando `pdm export -o requirements.txt` para generar un archivo requirements.txt en caso de que no desee configurar PDM.
+
+
 ## Contenido
 
 ├── `pdm.lock`: Archivo que contiene los paquetes a instalar en el entorno virtual

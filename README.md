@@ -1,25 +1,29 @@
-# Pacial 1 - Data Minning for Big Data
+# Paciales 1 y 2 - Data Minning for Big Data
 
 ## Desarrollado por: 
 * David Alejandro López Atehortúa
 
 ## Prerrequisitos
+En este proyecto se utiliza PDM como herramienta moderna para la gestión de dependencias en proyectos en Python. Documentacion https://pdm-project.org/en/latest/usage/dependency/
 
-* Instalar Pyenv (Seguir las instrucciones de <https://github.com/pyenv/pyenv>. Nota: no hay Pyenv para Windows. Se recomienda usar WSL (Windows Subsystem for Linux). También tener en cuenta las dependencias de sistemas que hay que instalar antes de instalar cualquier versión de Python en <https://github.com/pyenv/pyenv/wiki>)
-* Ejecutar `pyenv local` para verificar la versión local utilizada de Python e instalarla. Por ejemplo `pyenv install 3.11.4`.
-* Una vez que se esté usando la versión local, actualizar pip (`pip install --upgrade pip`) para luego instalar Pipenv.
-* Instalar Pipenv (`pip install pipenv`)
-* Instalar dependencies/crear ambiente virtual (`pipenv install`)
+* Instalar pdm y clang:
+curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+sudo apt install clang
+
+* Inicialización e instalación de python y librerías
+pdm python install 3.11.5
+pdm init
+pdm install
 
 ## Cómo instalar nuevas dependencias
 
-Por ejemplo si se quiere instalar Pandas, hacerlo mediante el comando `pipenv install pandas`.
+Por ejemplo si se quiere instalar Pandas, hacerlo mediante el comando `pdm add pandas`.
 
 ## Contenido
 
-├── `Pipfile`: Archivo que contiene los paquetes a instalar en el entorno virtual
+├── `pdm.lock`: Archivo que contiene los paquetes a instalar en el entorno virtual
 
-├── `Pipfile.lock`
+├── `pyproject.toml`: Archivo que contiene la configuración del entorno virtual
 
 └── `primerParcial` : folder para los archivos del caso práctico del primer parcial.
 
@@ -32,3 +36,7 @@ Por ejemplo si se quiere instalar Pandas, hacerlo mediante el comando `pipenv in
     ├── `pg100.txt` : ebook de texto que se usa como inpur para el ejercicio.
     
     └── `results_tfidf.txt` : Resultados de la ejecución de la aplicación auto-contenida.
+
+└── `segundoParcial` : folder para los archivos del caso práctico del segundo parcial.
+
+    ├── `parcial2_practico.ipynb` : Notebook en con python donde se aplica el algoritmo **CUFE** en datos no convexos.
